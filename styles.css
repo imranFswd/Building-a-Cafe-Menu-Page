@@ -1,0 +1,165 @@
+/* COMMON CSS area start here */
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5rem;
+}
+
+:root {
+  --color-white-ffffff: #ffffff;
+  --color-black-000000: #000000;
+  --color-black-555555: #555555;
+  --color-brown-b16445: #b16445;
+  --color-brown-a52a2a: #a52a2a;
+  --color-burlywood-deb887: #deb887;
+}
+
+body {
+  background-image: url(https://i.postimg.cc/5t3fjy3h/beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Impact, serif;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+.established {
+  font-style: italic;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+/* MAIN area start here */
+
+.mainMenu {
+  max-width: 500px;
+  width: 80%;
+  background-color: var(--color-burlywood-deb887);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.flavor,
+.dessert {
+  text-align: left;
+}
+
+.coffeePrice,
+.dessertsPrice {
+  text-align: right;
+}
+
+.coffeeItem,
+.dessertsItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease-out;
+  padding: 0 0.5rem;
+}
+
+.coffeeItem:hover,
+.dessertsItem:hover {
+  background: var(--color-black-000000);
+  transition: 0.25s ease-in;
+  opacity: 75%;
+  color: var(--color-white-ffffff);
+  cursor: pointer;
+  border-radius: 0.3rem;
+  letter-spacing: 1px;
+}
+
+.coffeeItem:hover .dollarSign,
+.dessertsItem:hover .dollarSign {
+  color: var(--color-burlywood-deb887);
+  text-shadow: 1px 1px 2px var(--color-black-000000);
+}
+
+.coffeeItem p,
+.dessertsItem p {
+  display: inline-block;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.dollarSign {
+  color: var(--color-burlywood-deb887);
+}
+
+hr {
+  height: 2px;
+  background-color: var(--color-brown-a52a2a);
+  border-color: var(--color-brown-a52a2a);
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+/* FOOTER area start here */
+
+.footerPara {
+  letter-spacing: 1px;
+}
+
+.footerArea {
+  font-size: 14px;
+}
+
+.footerLink {
+  color: var(--color-black-000000);
+  text-transform: capitalize;
+}
+
+.footerLink:visited {
+  color: var(--color-black-555555);
+}
+
+.footerLink:hover {
+  color: var(--color-brown-a52a2a);
+}
+
+.footerLink:active {
+  color: var(--color-brown-a52a2a);
+}
+
+.footerAddress {
+  margin-bottom: 5px;
+}
+
+/* RESPONSIVE area start here */
+
+@media (max-width: 720px) {
+  .mainMenu {
+    width: 100%;
+  }
+}
+
+/* end of CSS */
